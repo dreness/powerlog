@@ -1,5 +1,10 @@
 # powerlog
 
+<p>
+  <img src="screenshots/powerlog-screenshot-1.png" width="300" alt="powerlog timeline with a wake tooltip">
+  <img src="screenshots/powerlog-screenshot-2.png" width="300" alt="powerlog breakdown histograms">
+</p>
+
 Visual timeline of macOS power state activity, built from `pmset -g log`.
 
 Produces a self-contained HTML page (no network, no dependencies) showing:
@@ -15,6 +20,9 @@ Produces a self-contained HTML page (no network, no dependencies) showing:
 Hover for details, click an item for the full record (wake driver reasons, pending wake
 requests, slow PM/kernel clients, assertion IDs). Click a histogram row to filter or highlight
 it in the timeline.
+
+[`sample.html`](sample.html) is an example report covering two days; download it and open it in a
+browser.
 
 ## Usage
 
