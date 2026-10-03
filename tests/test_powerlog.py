@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURE = ROOT / "tests" / "fixture.log"
 
-loader = importlib.machinery.SourceFileLoader("powerlog", str(ROOT / "powerlog"))
+loader = importlib.machinery.SourceFileLoader("powerlog", str(ROOT / "powerlog.py"))
 spec = importlib.util.spec_from_loader("powerlog", loader)
 powerlog = importlib.util.module_from_spec(spec)
 loader.exec_module(powerlog)
@@ -96,7 +96,7 @@ class ParseTests(unittest.TestCase):
 
 class CliTests(unittest.TestCase):
     def run_cli(self, *args):
-        return subprocess.run([sys.executable, str(ROOT / "powerlog"), "-i", str(FIXTURE), *args],
+        return subprocess.run([sys.executable, str(ROOT / "powerlog.py"), "-i", str(FIXTURE), *args],
                               capture_output=True, text=True, check=True).stdout
 
     def test_text(self):

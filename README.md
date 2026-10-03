@@ -27,12 +27,12 @@ browser.
 ## Usage
 
 ```sh
-./powerlog                       # run pmset, write HTML to $TMPDIR, open it
-./powerlog --since 24h           # limit range (also: 90m, 2d, 1w, 'YYYY-MM-DD HH:MM')
-./powerlog -o power.html --no-open
-./powerlog -i saved-pmset.log    # analyze a log captured elsewhere ('-' for stdin)
-./powerlog --text                # terminal summary: transitions, wake reasons, top holders
-./powerlog --json                # parsed data
+./powerlog.py                       # run pmset, write HTML to $TMPDIR, open it
+./powerlog.py --since 24h           # limit range (also: 90m, 2d, 1w, 'YYYY-MM-DD HH:MM')
+./powerlog.py -o power.html --no-open
+./powerlog.py -i saved-pmset.log    # analyze a log captured elsewhere ('-' for stdin)
+./powerlog.py --text                # terminal summary: transitions, wake reasons, top holders
+./powerlog.py --json                # parsed data
 ```
 
 A single self-contained script; copy it anywhere on your `PATH`. Requires Python 3.8+ (stock
