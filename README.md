@@ -32,7 +32,8 @@ macOS `python3` works). `pmset -g log` doesn't need root.
 
 Timeline controls: drag to pan, pinch or option/cmd + two-finger scroll (or `+`/`-`) to zoom
 around the pointer (sideways motion pans at the same time), shift+scroll or arrow keys to pan,
-drag on the overview strip to select a range, double-click or `0` to show all.
+drag on the overview strip to select a range, double-click or `0` to show all. On touch screens,
+tap an item for its tooltip and tap it again for details, pinch to zoom, and drag sideways to pan.
 
 ## How the log is interpreted
 
