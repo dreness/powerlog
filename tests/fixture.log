@@ -1,0 +1,41 @@
+PM ASL data store: /var/log/powermanagement
+
+Time stamp                Domain              	Message	Duration  	Delay     
+==========                ======              	=======	========  	=====     
+UUID: 0A476FC4-7147-4D86-AE86-4B445CD62207
+2026-09-26 13:00:00 -0700 Assertions          	PID 572(coreaudiod) Released PreventUserIdleSystemSleep "com.apple.audio.context1" 00:10:00  id:0x0x10000a007 [System: PrevIdle kCPU]	
+2026-09-26 13:01:00 -0700 Assertions          	PID 402(apsd) Created NoIdleSleepAssertion "com.apple.apsd-outgoing" 00:00:00  id:0x0x100009ffe [System: PrevIdle]	
+2026-09-26 13:02:00 -0700 Assertions          	Summary- [System: PrevIdle] Using Batt(Charge: 89)	
+2026-09-26 13:02:00 -0700 Sleep               	Entering Sleep state due to 'Maintenance Sleep':TCPKeepAlive=active Using Batt (Charge:89%) 600 secs	
+2026-09-26 13:02:10 -0700 Wake Requests       	[*process=dasd request=SleepService deltaSecs=590 wakeAt=2026-09-26 13:12:00 info="com.apple.dasd:0:idleCheck"] [process=powerd request=UserWake deltaSecs=7000 wakeAt=2026-09-26 15:00:00]	
+2026-09-26 13:02:10 -0700 PM Client Acks      	Delays to Sleep notifications: [com.apple.bluetooth.sleep is slow(1540 ms)] [mDNSResponder is slow(2637 ms)]	
+2026-09-26 13:12:00 -0700 com.apple.sleepservices.sessionStarted	SleepService: window begins with cap time=180 secs	
+2026-09-26 13:12:00 -0700 DarkWake            	DarkWake from Deep Idle [CDNP] : due to NUB.SPMI0Sw3IRQ rtc/SleepService Using BATT (Charge:88%) 2 secs	
+2026-09-26 13:12:00 -0700 WakeDetails         	DriverReason:NUB.SPMI0Sw3IRQ - DriverDetails:	
+DriverReason:rtc - DriverDetails:
+2026-09-26 13:12:00 -0700 WakeTime            	WakeTime: 0.306 sec	
+2026-09-26 13:12:02 -0700 com.apple.sleepservices.sessionTerminated	SleepService: window has terminated.	
+2026-09-26 13:12:02 -0700 Assertions          	PID 402(apsd) Released NoIdleSleepAssertion "com.apple.apsd-outgoing" 00:11:02  id:0x0x100009ffe [System: PrevIdle]	
+2026-09-26 13:12:02 -0700 Sleep               	Entering Sleep state due to 'Sleep Service Back to Sleep':TCPKeepAlive=active Using Batt (Charge:88%) 1000 secs	
+2026-09-26 13:28:42 -0700 Wake                	Wake from Deep Idle [CDNVA] : due to smc.sysState.Wake lid RTP.multi-touch/UserActivity Assertion Using AC (Charge:88%)	
+2026-09-26 13:28:42 -0700 Notification        	Display is turned on	
+2026-09-26 13:29:00 -0700 Assertions          	PID 527(nfsd) Summary PreventUserIdleSystemSleep "com.apple.nfsd" 100:00:00 id:0x0x100008009 [System: PrevIdle]	
+2026-09-26 13:30:00 -0700 Assertions          	PID 35038(caffeinate) Created PreventUserIdleSystemSleep "caffeinate command-line tool" 00:00:00  id:0x0x100009868 [System: PrevIdle]	
+2026-09-26 13:34:00 -0700 Assertions          	PID 35038(caffeinate) ClientDied PreventUserIdleSystemSleep "caffeinate command-line tool" 00:04:00  id:0x0x100009868 [System: PrevIdle]	
+2026-09-26 13:40:00 -0700 Notification        	Display is turned off	
+
+Sleep/Wakes since boot:474   Dark Wake Count in this sleep cycle:1
+
+Time stamp                Domain              	Message	Duration  	Delay     
+==========                ======              	=======	========  	=====     
+UUID: (null)
+2026-09-26 14:00:00 -0700 Start               	powerd process is started	
+2026-09-26 14:05:00 -0700 Assertions          	PID 714(nfsd) Created PreventUserIdleSystemSleep "com.apple.nfsd" 00:00:00  id:0x0x10000800b [System: PrevIdle]	
+
+Total Sleep/Wakes since boot at 2026-09-26 14:00:00 -0700 :0
+
+2026-09-26 14:10:00 -0700 : Showing all currently held IOKit power assertions
+Assertion status system-wide:
+   PreventUserIdleSystemSleep     1
+Listed by owning process:
+   pid 714(nfsd): [0x0000007f0001800b] 00:05:00 PreventUserIdleSystemSleep named: "com.apple.nfsd"  
